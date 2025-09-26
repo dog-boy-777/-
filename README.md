@@ -11,7 +11,9 @@ web-server是netty服务端，负责接收错误堆栈，支持SpringAi调用大
 
 demo1是一个示例，引入了web-client打包而成的starter
 
+
 示例如下：
+
 
 1.demo1启动：
 <img width="1919" height="1087" alt="image" src="https://github.com/user-attachments/assets/3cf4f2c0-46b7-4ac4-ab8c-f7f11f4c0eda" />
