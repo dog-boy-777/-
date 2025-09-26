@@ -21,14 +21,17 @@ demo1是一个示例，引入了web-client打包而成的starter
 1.服务端建立连接：
 <img width="1919" height="1087" alt="image" src="https://github.com/user-attachments/assets/90385fb5-d0b2-4694-ad62-ab28d3bef7f2" />
 
+
 2.demo1捕抓到异常信息，发送给服务端：
 <img width="1919" height="1082" alt="image" src="https://github.com/user-attachments/assets/bd7099e3-4152-4978-9c99-10478d505df1" />
 
 2.服务端返回批号的ack确认，并存到mongoDB：
 <img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/ced366e4-711f-4994-9fda-e3ede870b58b" />
 
+
 3.服务端突然挂了，客户端重连操作：
 <img width="1919" height="1086" alt="image" src="https://github.com/user-attachments/assets/5459690c-2924-4c2b-8399-7c53d37d031a" />
+
 
 4.客户端一直没收到服务端发来的ack确认，尝试重发，重发一定次数后不再发送，改为写到本地文件：
 <img width="1919" height="1087" alt="image" src="https://github.com/user-attachments/assets/060c5201-f14d-4722-bd62-6420b69a8061" />
