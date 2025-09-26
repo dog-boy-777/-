@@ -1,0 +1,2 @@
+# 作用：等效于@Configuration，但是作为依赖被引用时也生效
+com.it.weblogclient.config.WeblogAutoConfig

@@ -1,0 +1,13 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "webLog.app-key",
+      "type": "java.lang.String",
+      "description": "与项目关联的appKey",
+      "sourceType": "com.it.weblogclient.properties.WebLogProperties",
+      "defaultValue": null
+    }
+  ],
+  "hints": []
+}

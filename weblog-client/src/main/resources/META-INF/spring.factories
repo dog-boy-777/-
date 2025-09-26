@@ -1,0 +1,3 @@
+# 作用：等效于@Configuration，但是作为依赖被引用时也生效
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.it.weblogclient.config.WeblogAutoConfig

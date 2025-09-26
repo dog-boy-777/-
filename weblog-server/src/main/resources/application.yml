@@ -1,0 +1,15 @@
+spring:
+    profiles:
+      active: dev
+    application:
+      name: weblog-server
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    context-path: /
+
+
+

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo1
+  datasource:
+    url: jdbc:mysql://localhost:3306/teriteri?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+web:
+  log:
+    open: true
+    appKey: tell me the true
+    gateWayUri: ws://localhost:8085/im
+    timeMillisPerSlice: 400
+    windowSize: 5
+    threshold: 10
+
+server:
+  port: 8080

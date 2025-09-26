@@ -1,0 +1,47 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+    mongodb:
+      host: localhost
+      port: 27017
+      database: webclub_log_management
+      # 开启驼峰映射
+      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy
+
+  # springAi配置,这里我用了阿里的qewn-plus模型
+  ai:
+    openai:
+      api-key:
+      base-url:
+      chat:
+        options:
+          model: qwen-plus
+
+# mongodb打印日志
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    com.it.weblogclient.aspect.RepositoryAspect: DEBUG
+
+web:
+  jwt:
+    # 密钥
+    secret-key: happy_web_log_item_everyDay_just_do_it_well
+    # 设置过期时间
+    ttl: 25920000000
+    # 前端传的令牌名字
+    token-name: token
+  # 使用AES算法生成随机密钥
+  aes:
+    key: tell-me-the-true
+
+# 开启日志输出到控制台和驼峰映射
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
