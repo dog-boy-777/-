@@ -1,5 +1,6 @@
 # -
 自编写starter提供给别的项目作为netty客户端来收集异常信息，并传输给netty服务端展示给用户。（个人感觉还是比较有价值的项目，点点start谢谢大家了！）
+技术栈为：SpringBoot＋SpringAi+MongoTemplate+Netty+Redis
 
 支持客户端重连，消息ACK确认，消息发送重试，空闲心跳检测(这个忘记写了，大家自行补上就好，不难这个)和错误日志过多预警。
 
